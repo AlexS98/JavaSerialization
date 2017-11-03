@@ -1,1 +1,3 @@
 # -MTP-Lab_4
+[![Build Status](https://travis-ci.org/AlexS98/JavaSerialization.svg?branch=master)](https://travis-ci.org/AlexS98/JavaSerialization)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8017743369554af98c24823bb10129ea)](https://www.codacy.com/app/AlexS98/JavaSerialization?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AlexS98/JavaSerialization&amp;utm_campaign=Badge_Grade)
