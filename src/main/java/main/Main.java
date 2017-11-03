@@ -1,10 +1,12 @@
+package main;
+
 import info.*;
 import serializations.*;
 import java.util.Arrays;
 import java.util.List;
 
 
-public class Main {
+class Main {
     static long startTime = 0, endTime = 0, startMemory = 0, endMemory = 0, nanoTime = 0, bytesMemory = 0;
     static double secondsTime = 0.0, megaBytesMemory = 0.0;
 

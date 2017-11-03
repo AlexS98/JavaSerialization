@@ -2,8 +2,8 @@ package info;
 
 
 public class Job {
-    String companyName;
-    int salary;
+    private String companyName;
+    private int salary;
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;

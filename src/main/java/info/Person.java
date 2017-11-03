@@ -2,11 +2,11 @@ package info;
 
 
 public class Person {
-    int personAge;
-    String personName;
-    String personSurname;
-    Residence homeTown;
-    Job personJob;
+    private int personAge;
+    private String personName;
+    private String personSurname;
+    private Residence homeTown;
+    private Job personJob;
 
     public int getPersonAge() {
         return personAge;

@@ -15,7 +15,9 @@ import java.util.regex.Pattern;
 public class OrgJSON implements ISerialize {
     @Override
     public void serialize(List<Person> persons) {
-        JSONObject person, home, work;
+        JSONObject person;
+        JSONObject home;
+        JSONObject work;
         JSONArray personsArray = new JSONArray();
         try (FileWriter writer = new FileWriter("OrgJSON.json"))
         {
@@ -54,7 +56,6 @@ public class OrgJSON implements ISerialize {
             while(m.find()){
                 counter++;
             }
-            System.out.println("count: "+ counter);
             JSONArray array = new JSONArray(data);
             array.getJSONObject(counter - 1);
             for(int i = 0; i < counter; i++){

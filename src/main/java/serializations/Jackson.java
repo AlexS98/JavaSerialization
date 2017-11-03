@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Jackson implements ISerialize {
 
-    File file = new File("jackson.json");
+    private File file = new File("jackson.json");
 
     @Override
     public void serialize(List<Person> persons) {

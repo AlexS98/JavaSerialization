@@ -2,9 +2,9 @@ package info;
 
 
 public class Residence{
-    String nameOfCity;
-    CityTypes type;
-    long population;
+    private String nameOfCity;
+    private CityTypes type;
+    private long population;
 
     public String getNameOfCity() {
         return nameOfCity;
