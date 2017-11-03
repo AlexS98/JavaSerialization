@@ -1,0 +1,44 @@
+[
+  {
+    "personAge": 25,
+    "personName": "Ivan",
+    "personSurname": "Ivanov",
+    "homeTown": {
+      "nameOfCity": "Kyiv",
+      "type": "city",
+      "population": 2500000
+    },
+    "personJob": {
+      "companyName": "Infopulse",
+      "salary": 25000
+    }
+  },
+  {
+    "personAge": 21,
+    "personName": "Vasia",
+    "personSurname": "Vasiliev",
+    "homeTown": {
+      "nameOfCity": "Znamianka",
+      "type": "town",
+      "population": 25000
+    },
+    "personJob": {
+      "companyName": "Geoid",
+      "salary": 10000
+    }
+  },
+  {
+    "personAge": 0,
+    "personName": "default",
+    "personSurname": "default",
+    "homeTown": {
+      "nameOfCity": "default",
+      "type": "_default",
+      "population": 0
+    },
+    "personJob": {
+      "companyName": "default",
+      "salary": 0
+    }
+  }
+]
