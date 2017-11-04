@@ -1,3 +1,5 @@
+package info;
+
 import info.Job;
 import org.junit.Assert;
 import org.junit.Test;
@@ -5,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class JobTest {
-    Job j = new Job();
+    private Job j = new Job();
 
     @Test
     public void getCompanyName() throws Exception {

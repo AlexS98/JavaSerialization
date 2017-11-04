@@ -1,3 +1,5 @@
+package info;
+
 import info.CityTypes;
 import info.Job;
 import info.Person;
@@ -7,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class PersonTest {
-    Person pers = new Person();
+    private Person pers = new Person();
     @Test
     public void getPersonAge() throws Exception {
         Assert.assertEquals(pers.getPersonAge(),0);

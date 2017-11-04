@@ -1,12 +1,12 @@
+package info;
+
 import info.CityTypes;
 import info.Residence;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class ResidenceTest {
-    Residence r = new Residence();
+    private Residence r = new Residence();
     @Test
     public void getNameOfCity() throws Exception {
         Assert.assertEquals(r.getNameOfCity(), "default");
