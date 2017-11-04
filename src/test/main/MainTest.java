@@ -1,4 +1,4 @@
-package project_tests;
+package main;
 
 import info.*;
 import org.junit.Assert;

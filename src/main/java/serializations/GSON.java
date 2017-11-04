@@ -19,7 +19,7 @@ public class GSON implements ISerialize {
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
-            persons = null;
+            return null;
         }
         return persons;
     }

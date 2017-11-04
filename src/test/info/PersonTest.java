@@ -1,46 +1,43 @@
 package info;
 
-import info.CityTypes;
-import info.Job;
-import info.Person;
-import info.Residence;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class PersonTest {
     private Person pers = new Person();
     @Test
     public void getPersonAge() throws Exception {
-        Assert.assertEquals(pers.getPersonAge(),0);
+        assertEquals(pers.getPersonAge(),0);
     }
 
     @Test
     public void setPersonAge() throws Exception {
         pers.setPersonAge(5);
-        Assert.assertEquals(pers.getPersonAge(),5);
+        assertEquals(pers.getPersonAge(),5);
     }
 
     @Test
     public void getPersonName() throws Exception {
-        Assert.assertEquals(pers.getPersonName(),"default");
+        assertEquals(pers.getPersonName(),"default");
     }
 
     @Test
     public void setPersonName() throws Exception {
         pers.setPersonName("_def");
-        Assert.assertEquals(pers.getPersonName(),"_def");
+        assertEquals(pers.getPersonName(),"_def");
     }
 
     @Test
     public void getPersonSurname() throws Exception {
-        Assert.assertEquals(pers.getPersonSurname(),"default");
+        assertEquals(pers.getPersonSurname(),"default");
     }
 
     @Test
     public void setPersonSurname() throws Exception {
         pers.setPersonSurname("_def");
-        Assert.assertEquals(pers.getPersonSurname(),"_def");
+        assertEquals(pers.getPersonSurname(),"_def");
     }
 
     @Test

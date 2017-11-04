@@ -22,7 +22,7 @@ public class Jackson implements ISerialize {
             obj.writeValue(file,persons);
         } catch (IOException e) {
              e.printStackTrace();
-             persons = null;
+             return null;
         }
         return persons;
     }
