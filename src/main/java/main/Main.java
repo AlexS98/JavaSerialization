@@ -6,9 +6,9 @@ import java.util.Arrays;
 import java.util.List;
 
 
-class Main {
-    static long startTime = 0, endTime = 0, startMemory = 0, endMemory = 0, nanoTime = 0, bytesMemory = 0;
-    static double secondsTime = 0.0, megaBytesMemory = 0.0;
+public class Main {
+    private static long startTime = 0, endTime = 0, startMemory = 0, endMemory = 0, nanoTime = 0, bytesMemory = 0;
+    private static double secondsTime = 0.0, megaBytesMemory = 0.0;
 
     public static void main(String[] args) {
         Person myPerson1 = new Person(25, "Ivan", "Ivanov", new Residence("Kyiv", CityTypes.city, 2500000), new Job("Infopulse", 25000));
@@ -21,7 +21,7 @@ class Main {
         System.out.println(takeMetrics(new OrgJSON(), persons));
     }
 
-    static String takeMetrics(ISerialize iserial, List<Person> list){
+    public static String takeMetrics(ISerialize iserial, List<Person> list){
         String metric = "";
         startMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
         startTime = System.nanoTime();

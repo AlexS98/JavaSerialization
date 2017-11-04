@@ -15,14 +15,16 @@ public class Jackson implements ISerialize {
     private File file = new File("jackson.json");
 
     @Override
-    public void serialize(List<Person> persons) {
+    public List<Person> serialize(List<Person> persons) {
         ObjectMapper obj = new ObjectMapper();
         obj.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         try {
             obj.writeValue(file,persons);
         } catch (IOException e) {
              e.printStackTrace();
+             persons = null;
         }
+        return persons;
     }
 
     @Override

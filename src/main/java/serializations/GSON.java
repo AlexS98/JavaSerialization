@@ -11,7 +11,7 @@ import java.util.List;
 public class GSON implements ISerialize {
 
     @Override
-    public void serialize(List<Person> persons) {
+    public List<Person> serialize(List<Person> persons) {
         try {
             FileWriter writer = new FileWriter("GoogleGSON.json");
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -19,7 +19,9 @@ public class GSON implements ISerialize {
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
+            persons = null;
         }
+        return persons;
     }
 
     @Override

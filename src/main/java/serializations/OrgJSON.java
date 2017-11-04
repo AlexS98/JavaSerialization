@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 
 public class OrgJSON implements ISerialize {
     @Override
-    public void serialize(List<Person> persons) {
+    public List<Person> serialize(List<Person> persons) {
         JSONObject person;
         JSONObject home;
         JSONObject work;
@@ -41,7 +41,9 @@ public class OrgJSON implements ISerialize {
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
+            persons = null;
         }
+        return persons;
     }
 
     @Override

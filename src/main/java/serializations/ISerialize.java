@@ -5,6 +5,6 @@ import info.*;
 import java.util.List;
 
 public interface ISerialize {
-    void serialize(List<Person> persons);
+    List<Person> serialize(List<Person> persons);
     List<Person> deserialize();
 }
